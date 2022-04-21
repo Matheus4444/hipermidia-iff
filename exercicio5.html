@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<style>
+	table, th, td {
+	  border:1px solid black;
+	}
+</style>
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<title>Titulo</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+	<script src='main.js'></script>
+</head>
+<body>
+	<h1>Tabelas</h1>
+	<br>
+	<br>
+	<br>
+	<h2>Célula com 2 colunas:</h2>
+	<table>
+		<tr>
+			<th>Nome</th>
+			<th colspan="2">Telefone</th>
+		</tr>
+		<tr>
+			<td>José das Couves</td>
+			<td>(22) 2728-6677</td>
+			<td>(22) 2728-7766</td>
+		</tr>
+	</table>
+	<h2>Célula com 2 linhas:</h2>
+	<table>
+		<tr>
+			<th>Nome</th>
+			<td>José das Couves</td>
+		</tr>
+		<tr>
+			<th rowspan="2">Telefone</th>
+			<td>(22) 2728-6677</td>
+		</tr>
+		<tr>
+			<td>(22) 2728-7766</td>
+		</tr>
+	</table>
+	<h2>Tabela com Legenda</h2>
+	<table>
+		<caption>Total de despesas por mês</caption>
+		<tr>
+			<th>Mês</th>
+			<th>Total</th>
+		</tr>
+		<tr>
+			<td>Janeiro</td>
+			<td>R$ 1.500,00</td>
+		</tr>
+		<tr>
+			<td>Fevereiro</td>
+			<td>R$ 1.470,00</td>
+		</tr>
+	</table>
+</body>
+</html>
