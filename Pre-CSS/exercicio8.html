@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<title>Titulo</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+	<script src='main.js'></script>
+</head>
+<body>
+	<h1>Aulas de Hipermidias</h1>
+	<h2>Preencha o formulário abaixo</h2>
+	<fieldset>
+		<legend>Dados Pessoais</legend>
+		<form>
+			<label for="fname">Nome: </label>
+			<input type="text">
+			<label for="surname">Sobrenome: </label>
+			<input type="text"> <br> <br>
+			<label for="birth">Nascimento: </label>
+			<input type="dia" placeholder="dd" size="2">
+			<input type="mes" placeholder="mm" size="2">
+			<input type="ano" placeholder="aaaa" size="4"> <br> <br>
+			<label for="sn">RG: </label>
+			<input type="numero" size="12"> <br> <br>
+			<label for="cpf">CPF: </label>
+			<input type="numero" size="7">
+			<label for="dash">-</label>
+			<input type="numero" size="3">
+		</form>
+	</fieldset>
+	<fieldset>
+		<legend>Dados de Endereço</legend>
+		<form>
+			<label for="rua">Rua: </label>
+			<input type="text">
+			<label for="surname">Numero: </label>
+			<input type="text" size="2"> <br> <br>
+			<label for="bairro">Bairro: </label>
+			<input type="text" size="12"> <br> <br>
+			<label for="sn">Estado: </label>
+			<select>
+				<option>Acre</option>
+                <option>Alagoas</option>
+                <option>Amapá</option>
+                <option>Amazonas</option>
+                <option>Bahia</option>
+                <option>Ceará</option>
+                <option>Espírito Santo</option>
+                <option>Goiás</option>
+                <option>Maranhão</option>
+                <option>Mato Grosso</option>
+                <option>Mato Grosso do Sul</option>
+                <option>Minas Gerais</option>
+                <option>Pará</option>
+                <option>Paraíba</option>
+                <option>Paraná</option>
+                <option>Pernambuco</option>
+                <option>Piauí</option>
+                <option>Rio de Janeiro</option>
+                <option>Rio Grande do Norte</option>
+                <option>Rio Grande do Sul</option>
+                <option>Rondônia</option>
+                <option>Roraima</option>
+                <option>Santa Catarina</option>
+                <option>São Paulo</option>
+                <option>Sergipe</option>
+                <option>Tocantins</option>
+			</select> <br> <br>
+			<label for="cidade">Cidade: </label>
+			<input type="text" size="12"> <br> <br>
+			<label for="cep">CEP: </label>
+			<input type="text" size="7">
+			<label for="dash">-</label>
+			<input type="numero" size="3">
+		</form>
+	</fieldset>
+	<fieldset>
+		<legend>Dados de login</legend>
+		<form>
+			<label for="e-mail">E-mail: </label>
+			<input type="text"> <br> <br>
+			<label for="imagem-perfil">Imagem de perfil: </label>
+			<input type="file" accept="image/*"> <br> <br>
+			<label for="login">Login de Usuário: </label>
+			<input type="text"> <br> <br>
+			<label for="senha">Senha: </label>
+			<input type="numero" size="12"> <br> <br>
+			<label for="senha">Confirme sua senha: </label>
+			<input type="numero" size="12"> <br> <br>
+		</form>
+	</fieldset>
+	<fieldset>
+		<legend>Pesquisa de Interesse</legend>
+		<p>Você deseja trabalhar como Webmasters?</p>
+		<form>
+			<label for="enunciado"></label>
+			<input type="radio">
+			<label for="sim">Sim</label><br>
+			<input type="radio">
+			<label for="nao">Não</label><br>
+			<input type="radio">
+			<label for="talvez">Talvez</label><br>
+			<input type="radio">
+			<label for="quem_sabe">Quem sabe</label>
+		</form>
+		<p>O que você deseja aprender?</p>
+		<form>
+			<label for="enunciado"></label>
+			<input type="checkbox">
+			<label for="html">HTML</label><br>
+			<input type="checkbox">
+			<label for="css">CSS</label><br>
+			<input type="checkbox">
+			<label for="javascript">JavaScript</label><br>
+			<input type="checkbox">
+			<label for="django">Django</label>
+		</form>
+		<form>
+			<label for="comentario">Deixe seu comentário: </label>
+			<textarea rows="15" cols="30" maxlength="500"></textarea>
+		</form>
+	</fieldset>
+	<br>
+	<br>
+	<button type="submit">Enviar</button>
+	<button type="reset">Limpar</button>
+</body>
+</html>
