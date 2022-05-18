@@ -1,0 +1,13 @@
+main{
+	background-image: url(tenshi.jpg);
+}
+#tituloMain{
+	font-family: Comic Sans MS, Comic Sans, cursive;
+}
+article{
+	background-color: darkgray;
+	text-align: center;
+}
+#paragrafo{
+	color: darkgreen;
+}
