@@ -1,0 +1,48 @@
+.header{
+	grid-area: header;
+}
+.nav{
+	grid-area: nav;
+}
+.principal{
+	grid-area: principal;
+}
+.footer{
+	grid-area: footer;
+}
+header{
+	background-color: darkgray;
+	color: white;
+	padding-left: 15px;
+}
+section{
+	padding-left: 15px;
+	border-left: 1px solid black;
+}
+footer{
+	background-color: darkgray;
+	color: white;
+}
+a{
+	color: black;
+	text-decoration: none;
+}
+li{
+	width: 100px;
+	border: none;
+	padding: 10px;
+	background-color: rgb(226,226,226);
+	list-style: none;
+}
+body{
+	display: grid;
+	grid-template-areas:
+		"header header header"
+		"nav principal principal"
+		"footer footer footer"
+	;
+}
+ul{
+	padding-left: 0px;
+	padding-right: 15px;
+}
