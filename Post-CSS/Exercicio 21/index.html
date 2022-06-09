@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<title>Titulo</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+	<script src='main.js'></script>
+</head>
+<body>
+	<input type="text">
+	<button onclick="calcular()">Calcular</button>
+	
+	<p id="d1"></p>
+	<p id="d2"></p>
+
+	<p>Diferença: </p>
+	<p id="dif"></p>
+	<p id="anos"></p>
+	<p id="c2"></p>
+	<p id="meses"></p>
+	<p id="dias"></p>
+
+<script>
+	function calcular() {
+		let data2 = document.querySelector('input').value;
+		const d2 = data2.split("/");
+	
+		var data1Default = new Date();
+		var data2Default = new Date(d2[1] + "/" + d2[0] + "/" + d2[2]);
+	
+		document.getElementById("d1").innerHTML = data1Default; 
+		document.getElementById("d2").innerHTML = data2Default;
+	
+		var difference = data2Default.getTime() - data1Default.getTime();
+		var difDias = Math.trunc(difference / (1000 * 3600 * 24));
+	
+		var anos = Math.trunc(difDias/365)
+		var resto =  difDias%365
+		var meses = Math.trunc(resto/30)
+		var dias = resto%30+1
+	
+	
+		document.getElementById("anos").innerHTML = "Anos: " + Math.sqrt(Math.pow(anos, 2));
+		document.getElementById("meses").innerHTML = "Meses: " + Math.sqrt(Math.pow(meses, 2));
+		document.getElementById("dias").innerHTML = "Dias: " + Math.sqrt(Math.pow(dias, 2));
+		
+	}
+
+
+</script>
+
+</body>
+</html>
