@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<title>Avaliacao P2</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>
+	<form id="myForm">
+		<label for="fname">Nome: </label>
+		<input type="text"> <br> <br>
+		
+		<label for="telephoneNumber">Número de telefone: </label>
+		<input type="text"> <br> <br>
+		
+		<label for="takeout">Cidade de retirada: </label><br>
+		<input type="radio" id="campos" name="cidade" value="1">
+		<label for="city1">Campos dos Goytacazes - RJ</label><br>
+		<input type="radio" id="rio" name="cidade" value="2">
+		<label for="city2">Rio de Janeiro - RJ</label><br>
+		<input type="radio" id="vitoria" name="cidade" value="3">
+		<label for="city3">Vitória - ES</label><br> <br>
+		
+		<label for="delivery">Cidade de entrega: </label><br>
+		<input type="radio" id="campos" name="cidade2" value="1">
+		<label for="city1">Campos dos Goytacazes - RJ</label><br>
+		<input type="radio" id="rio" name="cidade2" value="2">
+		<label for="city2">Rio de Janeiro - RJ</label><br>
+		<input type="radio" id="vitoria" name="cidade2" value="3">
+		<label for="city3">Vitória - ES</label><br> <br>
+		
+		<label for="takeoutDate">Data de retirada: </label>
+		<input type="number" id="day" name="dia" min="1" max="31" size="2">
+		<input type="number" id="month" name="mes" min="1" max="12" size="2">
+		<input type="number" id="year" name="ano" min="2022" max="2023" size="4"><br> <br>
+		
+		<label for="deliveryDate">Data de entrega: </label>
+		<input type="number" id="day" name="dia" min="1" max="31" size="2">
+		<input type="number" id="month" name="mes" min="1" max="12" size="2">
+		<input type="number" id="year" name="ano" min="2022" max="2023" size="4"><br> <br>
+		
+		<label for="carType">Tipo de carro: </label><br>
+		<input type="radio" id="basico" name="carro" value="119">
+		<label for="car1">Básico - 119,00</label><br>
+		<input type="radio" id="basicoCAr" name="carro" value="199">
+		<label for="car2">Básico com Ar - 199,00</label><br>
+		<input type="radio" id="executivo" name="carro" value="299">
+		<label for="car3">Executivo - 299,00</label><br> <br>
+		
+		<button onclick="calcularTaxa()">Calcular Taxa</button>
+		<span id="resultado"></span>
+	</form>
+	<script src='main.js'></script>
+</body>
+</html>
